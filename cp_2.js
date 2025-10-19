@@ -9,3 +9,8 @@ function fetchProductsThen() {
         console.log(fixedName);
       });
     })
+
+    .catch(function(error) {
+      console.log("Error fetching products:", error);
+    });
+}

@@ -42,3 +42,10 @@ function displayProducts(products) {
     container.appendChild(productCard);
   }
 }
+
+function handleError(error) {
+  console.log("An error occurred:", error.message);
+}
+
+fetchProductsThen();
+fetchProductsAsync();

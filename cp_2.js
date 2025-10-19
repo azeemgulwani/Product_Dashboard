@@ -14,3 +14,14 @@ function fetchProductsThen() {
       console.log("Error fetching products:", error);
     });
 }
+
+async function fetchProductsAsync() {
+  try {
+    var res = await fetch("https://www.course-api.com/javascript-store-products");
+    if (!res.ok) throw new Error("Failed to fetch data");
+    var products = await res.json();
+    displayProducts(products);
+  } catch (error) {
+    handleError(error);
+  }
+}

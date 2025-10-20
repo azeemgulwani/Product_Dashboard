@@ -38,3 +38,9 @@ header h1 { margin: 0; font-size: 42px; }
   font-size: 16px;
   margin: 10px 0 6px;
 }
+
+.product-card .price {
+  color: #0ea5e9;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
